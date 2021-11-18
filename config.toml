@@ -1,15 +1,4 @@
-baseURL = "https://patti-cleaning.netlify.app/"
+baseURL = "https://jameslovesrhonda.netlify.app/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
-[[menu.main]]
-name = "Services"
-weight = 2
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
