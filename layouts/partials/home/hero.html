@@ -1,0 +1,50 @@
+{{ $ihfID := .Site.Data.idx.ihf_client_id }}
+{{ $buttonColor := .Site.Data.appearance.colors }}
+{{ $slideSettings := .Site.Data.homelayout.slideshow_settings }}
+<div class="uk-position-top" style="z-index:1">
+    {{ partial "global/navbar" . }}
+</div>
+<div class="uk-padding">
+    <div class="uk-position-relative uk-visible-toggle uk-cover-container" tabindex="-1" uk-slideshow="animation: fade;autoplay: true">
+
+        <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom:10">
+            
+            <li>
+                <div class="uk-position-cover uk-transform-origin-center-left uk-animation-kenburns">
+                    <img src="https://previews.dropbox.com/p/thumb/ABXF1W7ZrKgaguykNp8nnCqfYrhHBBsu_J6E1_EbQZ39WJBr6ekDzwE1gANKpoeHOK1CjaHfBwp7Ksqvbp-RdnNeOVAzQ99boEjjLMBlIc44xSDUpf_WmNkauUFaAkMXrC_6H81Vm9xRGMUyDTTw3gx1B-drQuNRoHxFRHlt8Mu1HxCzz8ZChY4x39TD2sTuZD4RbgQf6Y4dfNV8CYkB5OPFLsYCxVDI126XqIGd9PpUfF_-qNShYNjaZo4CattQ_vWTKR_ybDDUMeFo-xB0ueNizWWZ9uJhXpifDESxPiLBDVZzP2qLMLeDDiXiwqzOwNTV6U2T7xmLPK7cDO9EG4rGET7ucbTf5ti5wLyXkFQfBQ/p.jpeg" alt="" uk-cover>
+                    <div class="hero-overlay uk-position-cover"></div>
+                </div>
+                <div class="uk-position-center uk-position-small uk-text-center hero">
+                    <div class="uk-width-2xxlarge uk-light uk-margin-large-top">
+                        <h1 class="uk-margin-remove uk-text-uppercase">Our &middot; Forever &middot; After</h1>
+                        <div class="uk-width-2xlarge">
+                            <p class="uk-margin-remove uk-text-default">We're looking forward to the next months celebrating with all of you. You are truly a blessing and a treasure to us.</p>
+                            <div class="uk-margin-medium-top">
+                                <a href="#rsvp" class="uk-button uk-button-primary" uk-scroll>RSVP The Date</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-position-cover uk-transform-origin-center-left uk-animation-kenburns">
+                    <img src="https://previews.dropbox.com/p/thumb/ABWJHJ6lfGIbUDc2V7Uh6_cbypQT7flgPs99aRuoAW2ppEwjQdAzByAk2wBYfeCB3Wil_6C4k2orR0rZpbMaa_7_FhDbWDOg-e7Os2FH5_JCvh0DVSBp3nCPy9ZMNXkx5b-KnS85q99oxP6nvPGcy-EE_kBGBWDhogNNUJB9-ITp621c9k5x9VaOAyCbAdUTR5Yevtwie6Dz3SHEM79lTFUEvnnrtAoKd5MsHpRQZ7X6j5-tlAgjncShjEUrVpbpQGdoa8_vpJGA5srHacEwUvzKK_18y0r07xiQfRseC7RJtDrWJK6TS3kOm7ohmTwDXFbUdXlmRvsM7K0Upaf2G7cZ-hZrBXD1OOwGt-0qSGjoDg/p.jpeg" alt="" uk-cover>
+                    <div class="hero-overlay uk-position-cover"></div>
+                </div>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <div class="uk-width-2xxlarge uk-light hero uk-margin-large-top">
+                        <h1 class="uk-margin-remove uk-text-uppercase">Our &middot; Forever &middot; After</h1>
+                        <div class="uk-width-2xlarge">
+                            <p class="uk-margin-remove uk-text-default">We're looking forward to the next months celebrating with all of you. You are truly a blessing and a treasure to us.</p>
+                            <div class="uk-margin-medium-top">
+                                <a href="#rsvp" class="uk-button uk-button-primary" uk-scroll>RSVP The Date</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    
+    </div>
+</div>

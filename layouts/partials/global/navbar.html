@@ -1,0 +1,43 @@
+{{ $navbar := .Site.Data.appearance.branding }}
+{{ $navColor := .Site.Data.appearance.header }}
+{{ $navContact := .Site.Data.profile.contact_information }}
+{{ $headerSocial := .Site.Data.profile.social_media }}
+<div class="uk-visible@m" style="background: #fff;">
+	<div>
+		<div class="uk-navbar-container uk-navbar-transparent">
+			<div class="uk-container uk-container-large">
+				<nav class="uk-navbar">
+					<div class="uk-navbar-left">
+                        <h1 class="cursive uk-margin-remove">James & Rhonda</h1>
+					</div>
+					<div class="uk-navbar-right">
+						<div class="uk-navbar-item">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="">Date</a></li>
+                                <li><a href="">RSVP</a></li>
+                                <li><a href="">Photos</a></li>
+                                <li><a href="">The Crew</a></li>
+                            </ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="uk-sticky-placeholder" hidden="" style="height: 80px; margin: 0px;"></div>
+</div>
+
+
+
+
+
+
+<!-- mobile -->
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
+    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small" style="padding: 0 15px;">
+        <div class="uk-navbar-center uk-padding-small">
+            <h1 class="cursive uk-margin-remove">James & Rhonda</h1>
+
+        </div>
+    </nav>
+    </div>
