@@ -1,4 +1,4 @@
-baseURL = "https://jameslovesrhonda.netlify.app/"
+baseURL = "https://www.jameslovesrhonda.com/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
