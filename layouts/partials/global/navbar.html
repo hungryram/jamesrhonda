@@ -13,10 +13,9 @@
 					<div class="uk-navbar-right">
 						<div class="uk-navbar-item">
                             <ul class="uk-navbar-nav">
-                                <li><a href="">Date</a></li>
-                                <li><a href="">RSVP</a></li>
-                                <li><a href="">Photos</a></li>
-                                <li><a href="">The Crew</a></li>
+                                <li><a href="#date" uk-scroll>Date</a></li>
+                                <li><a href="#photos" uk-scroll>Photos</a></li>
+                                <li><a href="#thecrew" uk-scroll>The Crew</a></li>
                             </ul>
 						</div>
 					</div>
@@ -34,9 +33,28 @@
 
 <!-- mobile -->
 <div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small" style="padding: 0 15px;">
-        <div class="uk-navbar-center uk-padding-small">
-            <h1 class="cursive uk-margin-remove">James & Rhonda</h1>
+    <nav class="uk-navbar uk-navbar-container uk-hidden@m uk-box-shadow-small" style="padding: 5px 15px;" uk-navbar="dropbar: true;mode: click">
+        <div class="uk-navbar-left">
+            <a href="{{ .Site.BaseURL }}">
+				<h1 class="cursive uk-margin-remove">James & Rhonda</h1>
+            </a>
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#" uk-toggle>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
+                    </a>
+                    <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-center;mode:click">
+                        <ul class="uk-nav uk-navbar-dropdown-nav uk-text-center">
+							<li><a href="#date" uk-scroll>Date</a></li>
+							<li><a href="#photos" uk-scroll>Photos</a></li>
+							<li><a href="#thecrew" uk-scroll>The Crew</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
 
         </div>
     </nav>
